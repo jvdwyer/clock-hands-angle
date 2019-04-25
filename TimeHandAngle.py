@@ -1,4 +1,4 @@
-def calcAngle(time):
+def calc_angle(time):
     big_hand = int(time.partition(':')[0])
     little_hand = int(time.partition(':')[2])
     if big_hand >= 12:
@@ -9,4 +9,4 @@ def calcAngle(time):
     little_hand_angle = 6 * little_hand
     return 360 - big_hand_angle - little_hand_angle
 
-print(calcAngle('3:10'))
+print(calc_angle('3:10'))
